@@ -1,0 +1,5 @@
+import de.schmitzekater.Post
+import grails.util.Environment
+
+Environment.executeForCurrentEnvironment(new BootStrap().init)
+println "There are ${Post.count()} posts in the DB"
